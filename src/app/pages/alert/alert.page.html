@@ -1,5 +1,13 @@
 <app-header titulo="Alert"></app-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+    <ion-button (click)="presentAlert()" expand="block">
+        AlerTA Simple
+    </ion-button>
+    <ion-button (click)="presentAlertConfirm()">Alerta con opciones</ion-button>
+    <p>{{ handlerMessage }}</p>
+    <p>{{ roleMessage }}</p>
+    <ion-button (click)="presentAlertPront()" expand="block">
+        Alerta con inputs
+    </ion-button>
 </ion-content>

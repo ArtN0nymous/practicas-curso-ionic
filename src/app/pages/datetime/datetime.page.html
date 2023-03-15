@@ -1,0 +1,70 @@
+<app-header titulo="datetime"></app-header>
+<ion-content class="ion-padding">
+  <p>Normal</p>
+  <ion-datetime></ion-datetime>
+  <p>Minimo y maximo</p>
+  <ion-datetime
+  value="2022-04-21T00:00:00"
+  min="2022-03-01T00:00:00"
+  max="2022-05-31T23:59:59"
+></ion-datetime>
+<p>Valores especificos</p>
+<ion-datetime
+  minuteValues="0,15,30,45"
+  dayValues="5,10,15,20,25,30"
+></ion-datetime>
+<p>Detección de fines de semana</p>
+<ion-datetime [isDateEnabled]="isWeekday"></ion-datetime>
+<p>Idioma/localizacion</p>
+<ion-datetime locale="es-ES"></ion-datetime>
+<p>Formato de 12h</p>
+<ion-datetime locale="en-GB" hourCycle="h12"></ion-datetime>
+<p>Texto del datepicker</p>
+<ion-datetime locale="es-ES">
+  <span slot="time-label">Tiempo</span>
+</ion-datetime>
+<p>Mes y año</p>
+<ion-datetime presentation="month-year"></ion-datetime>
+<p>Hora</p>
+<ion-datetime presentation="time"></ion-datetime>
+<p>Seleccion de fecha</p>
+<ion-datetime presentation="date"></ion-datetime>
+<p>selección de multiples fechas</p>
+<ion-datetime
+  presentation="date"
+  [multiple]="true"
+  [value]="['2022-06-03', '2022-06-13', '2022-06-29']"
+></ion-datetime>
+<p>Header</p>
+<ion-datetime [showDefaultTitle]="true"></ion-datetime>
+<p>Titulo personalizado</p>
+<ion-datetime>
+  <span slot="title">Select a Reservation Date</span>
+</ion-datetime>
+<p>Botones</p>
+<ion-datetime [showDefaultButtons]="true"></ion-datetime>
+<p>Botones personalizados</p>
+<ion-datetime
+  [showDefaultButtons]="true"
+  doneText="All set"
+  cancelText="Never mind"
+>
+</ion-datetime>
+<ion-datetime #datetime>
+  <ion-buttons slot="buttons">
+    <ion-button color="danger" (click)="datetime.reset()">Reset</ion-button>
+    <ion-button color="primary" (click)="datetime.cancel()">Never mind</ion-button>
+    <ion-button color="primary" (click)="datetime.confirm()">All Set</ion-button>
+  </ion-buttons>
+</ion-datetime>
+<p>Resaltar fechas</p>
+<ion-datetime
+  presentation="date"
+  value="2023-01-01"
+  [highlightedDates]="highlightedDates"
+></ion-datetime>
+<p>resaltar fechas con función</p>
+<ion-datetime presentation="date" [highlightedDates]="highlightedDates1"></ion-datetime>
+<p>temas</p>
+<ion-datetime color="rose"></ion-datetime>
+</ion-content>

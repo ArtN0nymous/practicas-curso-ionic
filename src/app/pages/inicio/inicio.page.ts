@@ -27,6 +27,10 @@ export class InicioPage implements OnInit {
     icon:'radio-button-on-outline',
     name:'Buttons',
     redirectTo:'/buttons'
+  },{
+    icon:'id-card-outline',
+    name:'Cards',
+    redirectTo:'/cards'
   }];
   constructor() { }
 

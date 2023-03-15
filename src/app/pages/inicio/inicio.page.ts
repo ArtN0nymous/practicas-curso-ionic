@@ -15,7 +15,7 @@ export class InicioPage implements OnInit {
     name:'Action Sheet',
     redirectTo:'/action-sheet'
   },{
-    icon:'football',
+    icon:'alert-circle-outline',
     name:'Alert',
     redirectTo:'/alert'
   }];

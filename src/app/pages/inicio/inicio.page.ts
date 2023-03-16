@@ -39,6 +39,10 @@ export class InicioPage implements OnInit {
     icon:'calendar-outline',
     name:'Datetime',
     redirectTo:'/datetime'
+  },{
+    icon:'radio-button-off-outline',
+    name:'Fab',
+    redirectTo:'/fab'
   }];
   constructor() { }
 

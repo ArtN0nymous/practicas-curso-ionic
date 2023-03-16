@@ -43,6 +43,10 @@ export class InicioPage implements OnInit {
     icon:'radio-button-off-outline',
     name:'Fab',
     redirectTo:'/fab'
+  },{
+    icon:'grid-outline',
+    name:'Grid',
+    redirectTo:'/grid'
   }];
   constructor() { }
 

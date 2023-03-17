@@ -32,4 +32,11 @@ export class InputsPage implements OnInit {
     this.ionInputEl.value = this.inputModel = filteredValue;
   }
   nombre :string='Ramón';
+  usuario={
+    email:'',
+    password:''
+  }
+  onSubmit(){
+    console.log(this.usuario);
+  }
 }

@@ -1,0 +1,89 @@
+<app-header [titulo]="nombre||'Inputs'"></app-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Text input</ion-label>
+      <ion-input placeholder="Enter text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Number input</ion-label>
+      <ion-input type="number" placeholder="000"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Password input</ion-label>
+      <ion-input type="password" value="password"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Email input</ion-label>
+      <ion-input type="email" placeholder="email@domain.com"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Telephone input</ion-label>
+      <ion-input type="tel" placeholder="888-888-8888"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Boton para limpiar texto</ion-label>
+      <ion-input [clearInput]="true" placeholder="Enter text to see clear button" value="Default value"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="stacked">Se elimina el texto al editar</ion-label>
+      <ion-input [clearOnEdit]="true" placeholder="Enter text, leave the input, come back and type to clear"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="stacked">se elimina el texto al editar tipo pass</ion-label>
+      <ion-input type="password" placeholder="Enter text, leave the input, come back and type to clear"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Default input</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+  
+  <ion-item fill="solid">
+    <ion-label position="floating">Solid input</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+  
+  <ion-item fill="outline">
+    <ion-label position="floating">Outline input</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+  <p>Validacion de tipo de datos muestra si es valido</p>
+  <ion-item fill="solid">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" ngModel email></ion-input>
+    <ion-note slot="helper">Enter a valid email</ion-note>
+    <ion-note slot="error">Invalid email</ion-note>
+  </ion-item>
+  <p>Contar carateres</p>
+  <ion-item counter="true">
+    <ion-label position="floating">Default Counter</ion-label>
+    <ion-input maxlength="20"></ion-input>
+  </ion-item>
+  
+  <ion-item id="custom-item" counter="true" [counterFormatter]="customCounterFormatter">
+    <ion-label position="floating">Custom Counter Format</ion-label>
+    <ion-input maxlength="20"></ion-input>
+  </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-label>Solo letras y números</ion-label>
+      <ion-input
+        [value]="inputModel"
+        (ionInput)="onInput($event)"
+        #ionInputEl
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

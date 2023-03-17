@@ -51,6 +51,11 @@ export class InicioPage implements OnInit {
     icon:'infinite-outline',
     name:'Infinite Scroll',
     redirectTo:'/infinite-scroll'
+  }
+  ,{
+    icon:'text-outline',
+    name:'Inputs',
+    redirectTo:'/inputs'
   }];
   constructor() { }
 

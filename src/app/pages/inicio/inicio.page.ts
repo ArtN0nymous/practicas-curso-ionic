@@ -59,6 +59,10 @@ export class InicioPage implements OnInit {
     icon:'list-outline',
     name:'List',
     redirectTo:'/list'
+  },{
+    icon:'list',
+    name:'List reorder',
+    redirectTo:'/list-reorder'
   }];
   constructor() { }
 

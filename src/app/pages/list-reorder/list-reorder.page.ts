@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-reorder.page.scss'],
 })
 export class ListReorderPage implements OnInit {
-
+  toggle:boolean=false;
+  onClick(){
+    this.toggle= this.toggle?false:true;
+  }
   constructor() { }
   personajes:string[]=['Aquaman','Superman','Batman','Mujer Maravilla','Flash'];
   ngOnInit() {

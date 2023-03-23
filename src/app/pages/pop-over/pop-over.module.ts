@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ToastPageRoutingModule } from './toast-routing.module';
+import { PopOverPageRoutingModule } from './pop-over-routing.module';
 
-import { ToastPage } from './toast.page';
-import { ComponentsModule } from '../../modules/components/components.module';
+import { PopOverPage } from './pop-over.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ToastPageRoutingModule,
+    PopOverPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [ToastPage]
+  declarations: [PopOverPage]
 })
-export class ToastPageModule {}
+export class PopOverPageModule {}

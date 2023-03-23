@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { RefresherPageRoutingModule } from './refresher-routing.module';
 
 import { RefresherPage } from './refresher.page';
-import { ComponentsModule } from '../../modules/components/components.module';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [

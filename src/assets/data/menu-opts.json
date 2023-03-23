@@ -55,4 +55,40 @@
     "icon":"battery-charging-outline",
     "name":"Loading",
     "redirectTo":"/loading"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"Modal",
+    "redirectTo":"/modal"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"PopOver",
+    "redirectTo":"/pop-over"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"Progressbar",
+    "redirectTo":"/progress-bar"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"Refresher",
+    "redirectTo":"/refresher"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"Searchbar",
+    "redirectTo":"/searchbar"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"Segment",
+    "redirectTo":"/segment"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"Slides",
+    "redirectTo":"/slides"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"Tabs",
+    "redirectTo":"/tabs"
+  },{
+    "icon":"radio-button-off-outline",
+    "name":"Toast",
+    "redirectTo":"/toast"
   }]

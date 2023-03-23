@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PopOverPageRoutingModule } from './pop-over-routing.module';
+import { ModalPageRoutingModule } from './modal-routing.module';
 
-import { PopOverPage } from './pop-over.page';
-import { ComponentsModule } from '../../modules/components/components.module';
+import { ModalPage } from './modal.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PopOverPageRoutingModule,
+    ModalPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [PopOverPage]
+  declarations: [ModalPage]
 })
-export class PopOverPageModule {}
+export class ModalPageModule {}
